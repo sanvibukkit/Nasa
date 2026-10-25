@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #050816;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #0d122a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background:
+        linear-gradient(rgba(0, 0, 0, .6),
+            rgba(0, 0, 0, .8)),
+        url("images/space.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    font-size: 1.2rem;
+}
+
+.btn {
+    margin-top: 25px;
+    padding: 12px 24px;
+    background: #ffd700;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 60px;
+}
+
+.card {
+    background: #111a38;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.timeline {
+    padding: 60px;
+}
+
+.timeline h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.timeline-item {
+    margin: 15px auto;
+    max-width: 500px;
+    padding: 15px;
+    background: #1a3d7c;
+    border-radius: 8px;
+}
+
+.page-header {
+    padding: 20px 20px;
+    text-align: center;
+    background: #1a3d7c;
+}
+
+.content {
+    padding: 60px;
+}
+
+.phase-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.phase {
+    background: #111a38;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.crew-grid {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.crew-card {
+    background: #111a38;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.technology {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.tech-card {
+    background: #1a3d7c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#countdown {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+@media(max-width:768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+}
